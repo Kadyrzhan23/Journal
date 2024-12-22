@@ -24,7 +24,7 @@ export default function Header2() {
   const pages = [
     { name: t("linkHome"), path: "/", link: "/" },
     { name: t("linkPosts"), path: "/posts", link: "/posts" },
-    // { name: t("linkAbout"), path: "/about", link: "/about" },
+    { name: t("linkAbout"), path: "/about", link: "/about" },
     { name: t("linkContacts"), path: "contacts" },
   ];
   const navigate = useNavigate();
