@@ -25,7 +25,6 @@ export default function AnimateBar() {
                         style={{ backgroundImage: elem.img }}
                       >
                         {elem.title}
-                        {/* <Button className={styles.btn}>Подобнее</Button> */}
                         <button
                           className={styles.button}
                           size="small"

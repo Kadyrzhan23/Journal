@@ -57,7 +57,6 @@ export default function Home() {
             className={styles.section_1_row_2}
           >
             {"the role of agriculture and medicine in science".toUpperCase()}
-            {/* {t("mainH1")} */}
           </motion.p>
           <motion.p
             initial="hidden"
@@ -69,15 +68,10 @@ export default function Home() {
             {t("mainH2")}
           </motion.p>
           <AnimateBar />
-          {/* <Section /> */}
         </Container>
       </div>
-      {/* <div className={styles.section_02}>Недавные посты</div> */}
       <div className={styles.section_03}>
-        {/* <div className={styles.section_03_row_01}> */}
-          {/* <RecentPosts /> */}
           <LastPosts />
-        {/* </div> */}
       </div>
     </div>
   );
