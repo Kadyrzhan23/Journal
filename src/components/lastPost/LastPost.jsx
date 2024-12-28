@@ -4,16 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 export default function LastPost({ post, index }) {
   const navigate = useNavigate()
-  const variants = {
-    initial:{
-      x:0
-    },
-    after:{
-      x:-10,
-      transition:{delay:1}
-
-    }
-  }
+  const image = '../../../public' + post.image
   return (
     <motion.div
     initial="initial"
@@ -22,9 +13,10 @@ export default function LastPost({ post, index }) {
     className={`${styles.wrapper} box_shadow`}
     onClick={()=> navigate(`/post/${index}`)}>
       <img
-        src={`/public${post.image}`}
-        alt=""
+        src={post.image}
+        alt="error image"
         className={styles.image}
+        style={{image}}
       />
       <div className={styles.postTheme}>
         {post.title}

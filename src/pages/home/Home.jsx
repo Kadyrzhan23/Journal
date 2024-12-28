@@ -40,14 +40,6 @@ export default function Home() {
             whileInView={"visible"}
             className={styles.section_1_row_1}
           >
-            {/* <img src="/icon-tdau2.png" alt="" width="64" height="64" />
-            <img src="/oliy-logo2.png" alt="" width="44" height="44" />
-            <img
-              src="/public/kafedra-logo2.png"
-              alt=""
-              width="54"
-              height="54"
-            /> */}
           </motion.div>
           <motion.p
             initial="hidden"

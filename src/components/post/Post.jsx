@@ -2,10 +2,10 @@ import React from "react";
 import styles from "./Post.module.css";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
+import userIMG from '../../../public/user.png'
 export default function Post({ post, index }) {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const image = `../../../public${post.image}.jpg`;
   // console.log(t("postAvtor"));
   return (
     <div
@@ -13,7 +13,7 @@ export default function Post({ post, index }) {
       onClick={() => navigate(`/post/${index}`)}
     >
       <div className={styles.header}>
-        <img src="/public/user.png" alt="" className={styles.avatar} />
+        <img src="/user.png" alt="" className={styles.avatar} />
         <div className={styles.postInfo}>
           <div className={styles.postInfo_col}>
             <div className={styles.postInfo_font}>
@@ -39,7 +39,7 @@ export default function Post({ post, index }) {
         </div>
       </div>
       <div className={styles.main}>
-        <img style={{ marginTop: 5 }} src={`/public${post.image}`} alt="" />
+        <img style={{ marginTop: 5 }} src={post.image} alt="" />
         {/* <div className={styles.postText}>
           <b className={styles.postTitle}>{post.title}</b> */}
           <p>{post.description}</p>

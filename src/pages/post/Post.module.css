@@ -8,6 +8,7 @@
     /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 5px;
     margin-bottom: 8px;
 }
@@ -21,6 +22,7 @@
 
 .avatar{
     width: 80px;
+    height: 80px;
     border-radius: 50%;
     border: 1px solid black;
 }

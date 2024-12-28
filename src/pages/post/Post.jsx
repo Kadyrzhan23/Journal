@@ -7,15 +7,13 @@ export default function Post() {
   const allPosts = useSelector((state) => state.post.allPosts);
   const image = `public${allPosts[id].image}`;
   console.log(image)
-  // const image = `../../../../public${allPosts[id].image}`;
-  ///@fs/Users/user/MyFiles/Aziz/public/post/amarant.jpg
   useEffect(() => {
     document.documentElement.scrollTop = 0;
   });
   return (
     <div className={styles.container}>
       <div className={`${styles.header} box_shadow`}>
-        <img src={'/public/user.png'} alt="erroruser" className={styles.avatar} />
+        <img src={'/user.png'} alt="erroruser" className={styles.avatar} />
         <div>
           {allPosts[id].author.length > 1 ? (
             <div style={{ display: "flex", flexDirection: "column" }}>
@@ -30,7 +28,7 @@ export default function Post() {
         </div>
       </div>
       <div className={styles.section_1}>
-        <img src={`/public${allPosts[id].image}`} alt="errorimage" className={styles.postImage} />
+        <img src={allPosts[id].image} alt="errorimage" className={styles.postImage} />
         <div className="">
           <strong>{allPosts[id].title}</strong>
           <p>{allPosts[id].description}</p>
