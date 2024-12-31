@@ -6,7 +6,6 @@ import MenuItem from "@mui/material/MenuItem";
 import { Box, IconButton, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useTranslation } from "react-i18next";
-import i18n from "../../utils/18n";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function Header2() {
@@ -39,6 +38,7 @@ export default function Header2() {
   };
 
   const handleNavigate = (index) => {
+    console.log(index)
     navigate(pages[index].path);
     setActive(index);
   };
@@ -72,7 +72,7 @@ export default function Header2() {
                   key={item.name}
                   item={item}
                   isSelected={activeIndex === index}
-                  handleClick={() => handleNavigate(index)}
+                  onClick={() => handleNavigate(index)}
                 />
               ))}
               <button className="btn">{t("btnHeader")}</button>
@@ -130,7 +130,8 @@ export default function Header2() {
                     key={page}
                     onClick={() => {
                       handleCloseNavMenu();
-                      navigate(index === 0 ? "/" : `/${page.path}`);
+                      console.log(page)
+                      navigate(`/${page.path}`);
                     }}
                   >
                     <Typography textAlign="center">
