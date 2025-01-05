@@ -22,9 +22,11 @@ export default function Header2() {
   );
   const pages = [
     { name: t("linkHome"), path: "/", link: "/" },
-    { name: t("linkPosts"), path: "/posts", link: "/posts" },
-    { name: t("linkAbout"), path: "/about", link: "/about" },
+    { name: t("linkPosts"), path: "posts", link: "/posts" },
+    { name: t("linkAbout"), path: "about", link: "/about" },
     { name: t("linkContacts"), path: "contacts" },
+    { name: t("linkContacts"), path: "members" },
+
   ];
   const navigate = useNavigate();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -38,12 +40,11 @@ export default function Header2() {
   };
 
   const handleNavigate = (index) => {
-    console.log(index)
+    // console.log(index)
     navigate(pages[index].path);
     setActive(index);
   };
   const langChange = (event) => {
-    // console.log(event.target.value);
     const language = event.target.value;
     selectedLanguage = language;
     window.localStorage.setItem("selectedLanguage", language);
@@ -68,12 +69,9 @@ export default function Header2() {
             />
             <div className={styles.navList}>
               {pages.map((item, index) => (
-                <NavItem
-                  key={item.name}
-                  item={item}
-                  isSelected={activeIndex === index}
-                  onClick={() => handleNavigate(index)}
-                />
+                <div 
+                className={`${styles.navItem} ${activeIndex === index && styles.activeLink}`}
+                onClick={()=> handleNavigate(index)}>{item.name.toUpperCase()}</div>
               ))}
               <button className="btn">{t("btnHeader")}</button>
               <span>
@@ -130,8 +128,9 @@ export default function Header2() {
                     key={page}
                     onClick={() => {
                       handleCloseNavMenu();
-                      console.log(page)
-                      navigate(`/${page.path}`);
+                      handleNavigate(index)
+                      // navigate(`/${page.path}`);
+                      // console.log(page.path)
                     }}
                   >
                     <Typography textAlign="center">

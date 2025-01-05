@@ -71,6 +71,14 @@ p {
 .line3{
     display: flex;
     font-size: 30px;
+    overflow: hidden;
 }
 
+
+@media (max-width: 768px){
+    .footer , .line3 , .title , .line , .line2{
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
 

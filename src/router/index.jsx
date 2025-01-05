@@ -5,6 +5,7 @@ import Posts from '../pages/posts/Posts.jsx'
 import About from '../pages/about/About.jsx';
 import Contacts from '../pages/contacts/Contacts.jsx';
 import Post from "../pages/post/Post.jsx";
+import Members from "../pages/members/Members.jsx";
 import NotFound from "../pages/notFountd/NotFound.jsx";
 const router = createBrowserRouter(createRoutesFromElements(
     <Route>
@@ -14,6 +15,7 @@ const router = createBrowserRouter(createRoutesFromElements(
             <Route path="post/:id" element={<Post />} />
             <Route path="about" element={<About />} />
             <Route path="contacts" element={<Contacts />} />
+            <Route path="members" element={<Members />} />
             <Route path="*" element={<NotFound />} />
         </Route>
     </Route>
