@@ -1,23 +1,19 @@
 import React from "react";
-import { Worker } from "@react-pdf-viewer/core"; // Поддержка Web Worker
-import { Viewer } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import styles from "../about/About.module.css";
+import { useTranslation } from "react-i18next";
+
 export default function Contacts() {
-  const pdfUrl = "../../../public/pdf/contact.pdf";
+  const { t} = useTranslation();
+
   return (
     <div className={styles.wrapper}>
-      {/* <Worker
-        workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}
-      >
-        <Viewer fileUrl={pdfUrl} />
-      </Worker> */}
       <div className={styles.footer}>
-        Manzil: Toshkent viloyati, Qibray tumani Universitet ko‘chasi 2-uy
+        {t("address")}
       </div>
       <div className={styles.lines3}>
         <div className={styles.line3}>
-          Toshkent davlat agrar universiteti Bosh bino Ilmiy bo‘lim
+          {t("university")}
         </div>
         <br />
         <br />

@@ -2,12 +2,18 @@
     "mainH1":"JAHON VA FAN TARAQQIYOT JURNALI",
     "mainH2":"QISHLOQ XO'JALIGI VA MEDITSINA",
     "linkHome":"Bosh sahifa",
-    "linkPosts":"maqolalar",
+    "linkPosts":"Maqolalar",
+    "linkArchive":"arxiv",
     "linkAbout":"biz haqimizda",
     "linkContacts":"aloqa",
     "postAvtor":"Muallif",
     "postAvtors":"Mualliflar",
     "postTema":"Tadqiqot mavzusi",
     "btnPodrobnee":"Tanlash",
-    "btnHeader":"Nashrlash"
+    "btnHeader":"Nashrlash",
+    "address":"Manzil: Toshkent viloyati, Qibray tumani Universitet ko‘chasi 2-uy",
+    "university":"Toshkent davlat agrar universiteti Bosh bino Ilmiy bo‘lim",
+    "openPdf":"PDF ochish",
+    "articles":"M",
+    "page":"Varoqlar"
 }

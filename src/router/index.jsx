@@ -2,6 +2,8 @@ import { Route, createBrowserRouter, createRoutesFromElements } from "react-rout
 import Home from "../pages/home/Home.jsx";
 import Layout from "../components/layout/Layout.jsx";
 import Posts from '../pages/posts/Posts.jsx'
+import Archive from '../pages/archive/Archive.jsx'
+import Articles from '../pages/Articles/Articles.jsx'
 import About from '../pages/about/About.jsx';
 import Contacts from '../pages/contacts/Contacts.jsx';
 import Post from "../pages/post/Post.jsx";
@@ -12,6 +14,8 @@ const router = createBrowserRouter(createRoutesFromElements(
         <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="posts" element={<Posts />} />
+            <Route path="archive" element={<Archive />} />
+            <Route path="articles" element={<Articles />} />
             <Route path="post/:id" element={<Post />} />
             <Route path="about" element={<About />} />
             <Route path="contacts" element={<Contacts />} />

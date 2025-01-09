@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import LastPosts from "./last-posts/LastPosts";
 import { motion } from "framer-motion";
 import AnimateBar from "./animateBar/AnimateBar";
+import lastImage from "../../../public/decemberArticles.jpg";
 export default function Home() {
   const textAnimation = {
     hidden: {
@@ -30,7 +31,7 @@ export default function Home() {
       transition: { delay: custom * 0.2 },
     }),
   };
-  const { t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <div>
       <div className={`${styles.section_1} box_shadow`}>
@@ -39,8 +40,7 @@ export default function Home() {
             initial="hidden"
             whileInView={"visible"}
             className={styles.section_1_row_1}
-          >
-          </motion.div>
+          ></motion.div>
           <motion.p
             initial="hidden"
             whileInView={"visible"}
@@ -63,7 +63,7 @@ export default function Home() {
         </Container>
       </div>
       <div className={styles.section_03}>
-          <LastPosts />
+        <LastPosts />
       </div>
     </div>
   );

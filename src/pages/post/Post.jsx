@@ -2,8 +2,10 @@ import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import styles from "./Post.module.css";
 import { useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
 export default function Post() {
   const { id } = useParams();
+  const { t } = useTranslation();
   const allPosts = useSelector((state) => state.post.allPosts);
   const image = `public${allPosts[id].image}`;
   console.log(image)
@@ -17,7 +19,9 @@ export default function Post() {
         <div>
           {allPosts[id].author.length > 1 ? (
             <div style={{ display: "flex", flexDirection: "column" }}>
-              Авторы :
+              <>
+              {t("postAvtors")}
+              </> :
               {allPosts[id].author.map((person) => (
                 <div>{person + ","}&nbsp;&nbsp;&nbsp;</div>
               ))}

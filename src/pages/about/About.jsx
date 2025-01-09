@@ -1,33 +1,42 @@
 import React from "react";
 import styles from "./About.module.css";
 import "@react-pdf-viewer/core/lib/styles/index.css";
+import { Viewer, Worker } from "@react-pdf-viewer/core";
 export default function About() {
   const pdfUrl = "../../../public/pdf/About.pdf";
   let language = window.localStorage.getItem("selectedLanguage");
-  return <div className={styles.wrapper}>
-    {
-      !language ? RU : language === 'ru' ? RU : language === 'en' ? EN : language === 'kz' ? KZ : UZ
-    }
-  </div>
+  return (
+    <div className={styles.wrapper}>
+      {!language
+        ? RU
+        : language === "ru"
+        ? RU
+        : language === "en"
+        ? EN
+        : language === "kz"
+        ? KZ
+        : UZ}
+    </div>
+  );
 }
 
 const UZ = (
   <>
     <p className={`${styles.title}`}>
-      THE ROLE OF AGRICULTURE AND MEDICINE IN SCIENCE jurnali O‘zbekiston
-      Respublikasi Prezidenti Administratsiyasi huzuridagi axborot va ommaviy
-      kommunikatsiyalar agentligi tomonidan 2024-yil 5-dekabr kuni taqdim
-      etilgan № 516376 GUVOHNOMA asosida o‘z faoliyatini boshladi.
+      <strong>THE ROLE OF AGRICULTURE AND MEDICINE IN SCIENCE</strong> jurnali
+      O‘zbekiston Respublikasi Prezidenti Administratsiyasi huzuridagi axborot
+      va ommaviy kommunikatsiyalar agentligi tomonidan 2024-yil 5-dekabr kuni
+      taqdim etilgan № 516376 GUVOHNOMA asosida o‘z faoliyatini boshladi.
     </p>
     <br />
     <br />
     <p className={styles.title}>
-      THE ROLE OF AGRICULTURE AND MEDICINE IN SCIENCE jurnali Toshkent davlat
+      <strong>THE ROLE OF AGRICULTURE AND MEDICINE IN SCIENCE </strong> jurnali Toshkent davlat
       agrar universiteti huzurida o‘z faoliyatini olib boradi.
     </p>
     <br />
     <p className={styles.title}>
-      Jurnal ushbu ixtisosliklarda maqolalarni nashr etadi.
+      Jurnal ushbu ixtisosliklarda har oy 1 ta to‘plam nashr etadi.
     </p>
     <div className={styles.lines}>
       <div className={styles.line}>
@@ -69,20 +78,20 @@ const UZ = (
 const EN = (
   <>
     <p className={`${styles.title}`}>
-      THE ROLE OF AGRICULTURE AND MEDICINE IN SCIENCE journal started its
-      activity on the basis of the CERTIFICATE № 516376 submitted on December 5,
-      2024 by the Information and Mass Communications Agency under the
-      Administration of the President of the Republic of Uzbekistan
+      <strong> ROLE OF AGRICULTURE AND MEDICINE IN SCIENCE</strong> THE journal
+      started its activity on the basis of the CERTIFICATE № 516376 submitted on
+      December 5, 2024 by the Information and Mass Communications Agency under
+      the Administration of the President of the Republic of Uzbekistan
     </p>
     <br />
     <br />
     <p className={styles.title}>
-      THE ROLE OF AGRICULTURE AND MEDICINE IN SCIENCE magazine operates under
+      <strong>THE ROLE OF AGRICULTURE AND MEDICINE IN SCIENCE </strong> journal operates under
       Tashkent State Agrarian University
     </p>
     <br />
     <p className={styles.title}>
-      The journal publishes articles in these specialties.
+    The journal publishes one collection each month in these specializations.
     </p>
     <div className={styles.lines}>
       <div className={styles.line}>
@@ -125,10 +134,10 @@ const EN = (
 const RU = (
   <>
     <p className={`${styles.title}`}>
-      THE ROLE OF AGRICULTURE AND MEDICINE IN SCIENCE Журнал начал свою
-      деятельность на основании СВИДЕТЕЛЬСТВА № 516376, выданного 5 декабря 2024
-      года Агентством информации и массовых коммуникаций при Администрации
-      Президента Республики Узбекистан.
+      <strong>THE ROLE OF AGRICULTURE AND MEDICINE IN SCIENCE</strong> Журнал
+      начал свою деятельность на основании СВИДЕТЕЛЬСТВА № 516376, выданного 5
+      декабря 2024 года Агентством информации и массовых коммуникаций при
+      Администрации Президента Республики Узбекистан.
     </p>
     <br />
     <br />
@@ -138,7 +147,7 @@ const RU = (
     </p>
     <br />
     <p className={styles.title}>
-      Журнал публикует статьи по этим специальностям.
+      Журнал публикует каждый месяц статьи по этим специальностям .
     </p>
     <div className={styles.lines}>
       <div className={styles.line}>
@@ -180,21 +189,21 @@ const RU = (
 const KZ = (
   <>
     <p className={`${styles.title}`}>
-      <strong>THE ROLE OF AGRICULTURE AND MEDICINE IN SCIENCE jurnali</strong>
+      <strong>THE ROLE OF AGRICULTURE AND MEDICINE IN SCIENCE </strong>
       Журнал өз қызметін Өзбекстан Республикасы Президенті Әкімшілігінің
-      жанындағы Ақпарат және бұқаралық коммуникациялар агенттігінің 2024 жылдың
+      жанындағы Ақпарат және азаматтық коммуникациялар агенттігінің 2024 жылдың
       5-желтоқсанында берген №516376 СЕРТИФИКАТ негізінде бастады.
     </p>
     <br />
     <br />
     <p className={styles.title}>
-      Ташкент мемлекеттік аграрлық университетінде{" "}
-      <strong>THE ROLE OF AGRICULTURE AND MEDICINE IN SCIENCE </strong> jurnali
+      Ташкент мемлекеттік аграрлық университетіндe
+      <strong> THE ROLE OF AGRICULTURE AND MEDICINE IN SCIENCE </strong>
       журналы жұмыс істейді.
     </p>
     <br />
     <p className={styles.title}>
-      Журналда осы мамандықтар бойынша мақалалар жарияланады.
+    Журнал ай сайын осы мамандықтар бойынша бір жинақ шығарады.
     </p>
     <div className={styles.lines}>
       <div className={styles.line}>

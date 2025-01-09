@@ -22,10 +22,11 @@ export default function Header2() {
   );
   const pages = [
     { name: t("linkHome"), path: "/", link: "/" },
+    { name: t("linkArchive"), path: "archive", link: "/posts" },
     { name: t("linkPosts"), path: "posts", link: "/posts" },
     { name: t("linkAbout"), path: "about", link: "/about" },
     { name: t("linkContacts"), path: "contacts" },
-    { name: t("linkContacts"), path: "members" },
+    // { name: t("linkContacts"), path: "members" },
 
   ];
   const navigate = useNavigate();
@@ -73,7 +74,10 @@ export default function Header2() {
                 className={`${styles.navItem} ${activeIndex === index && styles.activeLink}`}
                 onClick={()=> handleNavigate(index)}>{item.name.toUpperCase()}</div>
               ))}
-              <button className="btn">{t("btnHeader")}</button>
+              <a className={`btn ${styles.btnTg}`}
+              href="https://t.me/Azizbek_1711"
+              target="_blank"
+              >{t("btnHeader")}</a>
               <span>
                 <select onChange={langChange} value={lang}>
                   <option value={"ru"}>ru</option>

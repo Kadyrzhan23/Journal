@@ -4,11 +4,18 @@
     "linkHome":"home",
     "linkPosts":"posts",
     "linkAbout":"about",
+    "linkArchive":"archive",
     "linkContacts":"contacts",
     "postAvtor":"Аuthor",
     "postAvtors":"Аuthors",
     "postTema":"Research topic",
     "btnPodrobnee":"Go to",
-    "btnHeader":"Go public"
+    "btnHeader":"Go public",
+    "address":"Address: Tashkent region, Kibray district, University street, 2-house",
+    "university":"Tashkent State Agrarian University Main building Scientific department",
+    "authors":"Authors",
+    "openPdf":"Open PDF",
+    "articles":"Articles",
+    "page":"Pages"
 
 }

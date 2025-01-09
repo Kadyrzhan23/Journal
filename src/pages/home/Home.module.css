@@ -49,6 +49,15 @@
 padding: 20px 0;
 }
 
+.lastArticles{
+    background-color: #F9F9F9;
+    margin-top: 20px;
+}
+
+.lastArticles img{
+    width: 300px;
+}
+
 .section_03_row_01 {
     /* text-align: center;
     font-size: 28px;
