@@ -31,8 +31,13 @@ const UZ = (
     <br />
     <br />
     <p className={styles.title}>
-      <strong>THE ROLE OF AGRICULTURE AND MEDICINE IN SCIENCE </strong> jurnali Toshkent davlat
-      agrar universiteti huzurida o‘z faoliyatini olib boradi.
+     <strong> MUASSIS: TOSHKENT DAVLAT AGRAR UNIVERSITETI.</strong>
+    </p>
+    <br />
+    <br />
+    <p className={styles.title}>
+      <strong>THE ROLE OF AGRICULTURE AND MEDICINE IN SCIENCE </strong> jurnali
+      Toshkent davlat agrar universiteti huzurida o‘z faoliyatini olib boradi.
     </p>
     <br />
     <p className={styles.title}>
@@ -86,12 +91,17 @@ const EN = (
     <br />
     <br />
     <p className={styles.title}>
-      <strong>THE ROLE OF AGRICULTURE AND MEDICINE IN SCIENCE </strong> journal operates under
-      Tashkent State Agrarian University
+    <strong>CONSTITUTOR: TASHKENT STATE AGRARIAN UNIVERSITY.</strong>
+    </p>
+    <br />
+    <br />
+    <p className={styles.title}>
+      <strong>THE ROLE OF AGRICULTURE AND MEDICINE IN SCIENCE </strong> journal
+      operates under Tashkent State Agrarian University
     </p>
     <br />
     <p className={styles.title}>
-    The journal publishes one collection each month in these specializations.
+      The journal publishes one collection each month in these specializations.
     </p>
     <div className={styles.lines}>
       <div className={styles.line}>
@@ -142,7 +152,12 @@ const RU = (
     <br />
     <br />
     <p className={styles.title}>
-      Журнал «THE ROLE OF AGRICULTURE AND MEDICINE IN SCIENCE » действует при
+    <strong>УЧРЕДИТЕЛЬ: ТАШКЕНТСКИЙ ГОСУДАРСТВЕННЫЙ АГРАРНЫЙ УНИВЕРСИТЕТ.</strong>
+    </p>
+    <br />
+    <br />
+    <p className={styles.title}>
+      Журнал <strong>«THE ROLE OF AGRICULTURE AND MEDICINE IN SCIENCE »</strong> действует при
       Ташкентском государственном аграрном университете.
     </p>
     <br />
@@ -197,13 +212,18 @@ const KZ = (
     <br />
     <br />
     <p className={styles.title}>
+    <strong> НЕГІЗІН ҚАЛАУШЫ: ТАШКЕНТ МЕМЛЕКЕТТІК АГРАРЛЫҚ УНИВЕРСИТЕТІ</strong>
+    </p>
+    <br />
+    <br />
+    <p className={styles.title}>
       Ташкент мемлекеттік аграрлық университетіндe
       <strong> THE ROLE OF AGRICULTURE AND MEDICINE IN SCIENCE </strong>
       журналы жұмыс істейді.
     </p>
     <br />
     <p className={styles.title}>
-    Журнал ай сайын осы мамандықтар бойынша бір жинақ шығарады.
+      Журнал ай сайын осы мамандықтар бойынша бір жинақ шығарады.
     </p>
     <div className={styles.lines}>
       <div className={styles.line}>

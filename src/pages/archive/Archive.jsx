@@ -1,8 +1,11 @@
 import React from "react";
 import styles from "./Archive.module.css";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 export default function Archive() {
     const navigate = useNavigate()
+  const { t } = useTranslation();
+
   const items = [
     {
       date: "06-12-2024",
@@ -14,7 +17,7 @@ export default function Archive() {
   ];
   return (
     <div>
-      <h1>Архивы</h1>
+      <h1>{t("linkArchive")}</h1>
 
       <div className={styles.archivesWrapper}>
         {items.map((item) => {

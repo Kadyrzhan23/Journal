@@ -4,6 +4,7 @@ import image from "./../../../public/articlesDecember2024.jpg";
 import { useTranslation } from "react-i18next";
 export default function Articles() {
   const { t } = useTranslation();
+
   const articles = [
     {
       title: `APPLE MODERN TECHNOLOGIES IN STORAGE OF EXPORT
@@ -14,13 +15,13 @@ export default function Articles() {
         "Abdullaev F.T., PhD, professor",
         "Dubovik T.V., senior teacher",
       ],
-      href: "https://drive.google.com/file/d/1NkR1xoipcZATb97DexfGbDP9F4iV4FBW/view?usp=drive_link",
+      href: "https://drive.google.com/file/d/1NkR1xoipcZATb97DexfGbDP9F4iV4FBW/view?usp=sharing",
     },
     {
       title: `BEET GROWING TECHNOLOGY`,
       pages: "10-11",
       authors: ["Rajabov Jonibek Baxtiyorovich"],
-      href: "https://drive.google.com/file/d/1frrOvGk-o8GZLIL0v4KJ0D-zeKABuzDd/view?usp=drive_link",
+      href: "https://drive.google.com/file/d/1frrOvGk-o8GZLIL0v4KJ0D-zeKABuzDd/view?usp=sharing",
     },
     {
       title: `QOVUN MEVASINI ISTE’MOLGA YAROQLILIGINI
@@ -31,7 +32,7 @@ export default function Articles() {
         "Hoshimova Shaxlo Ulug‘bek qizi",
         "Nematov Nurillo Abduraxim o‘g‘li",
       ],
-      href: "https://drive.google.com/file/d/19O57zNrLRvPNzV9M3NGArWYAeSTBtF0_/view?usp=drive_link",
+      href: "https://drive.google.com/file/d/19O57zNrLRvPNzV9M3NGArWYAeSTBtF0_/view?usp=sharing",
     },
     {
       title: `O‘ZBEKISTON SHAROITIDA ISSIQXONALARNI TASHKIL ETISH VA
@@ -42,7 +43,7 @@ export default function Articles() {
         "Irzaqulova Sevinch Jamoliddin qizi",
         "Durxo‘jayev Shavkat Fayzullayevich",
       ],
-      href: "https://drive.google.com/file/d/17oCD7LzI2lbvarlZoxbkk0Ks58tqbSaq/view?usp=drive_link",
+      href: "https://drive.google.com/file/d/17oCD7LzI2lbvarlZoxbkk0Ks58tqbSaq/view?usp=sharing",
     },
     {
       title: `ARPA NAVLARIDA ASOSIY SO‘RUVCHI
@@ -53,14 +54,14 @@ export default function Articles() {
         "Nasirov Baxtiyor Salohiddinovich",
         "Norbo‘tayev Abror Alisher o‘g‘li",
       ],
-      href: "https://drive.google.com/file/d/1vcuMJPbuPQksffYcgvjLYIhaJCzhBX0l/view?usp=drive_link",
+      href: "https://drive.google.com/file/d/1vcuMJPbuPQksffYcgvjLYIhaJCzhBX0l/view?usp=sharing",
     },
     {
       title: `CHIMBOY TUMANI SUG‘ORILADIGAN O‘TLOQI-ALLYUVIAL
       TUPROQLARINING AGROFIZIKAVIY XOSSALARI`,
       pages: "22-25",
       authors: ["Xojasov.А.", "Sayimbetov.A.", "Xojasov.M"],
-      href: "https://drive.google.com/file/d/1Kgj61rho7brU_-6M6h8_rDyXz8ELDCsV/view?usp=drive_link",
+      href: "https://drive.google.com/file/d/1Kgj61rho7brU_-6M6h8_rDyXz8ELDCsV/view?usp=sharing",
     },
     {
       title: `1-MCP ETILEN INGIBITORI BILAN BEHI MEVASINING SAQLASH
@@ -70,7 +71,7 @@ export default function Articles() {
         "Uzoqov Islom Toshpulat o‘g‘li",
         "Turg‘unov Azizbek Normat o‘g‘li",
       ],
-      href: "https://drive.google.com/file/d/14nhecX82tazV9_dD5lD256a7mjsKlUx0/view?usp=drive_link",
+      href: "https://drive.google.com/file/d/14nhecX82tazV9_dD5lD256a7mjsKlUx0/view?usp=sharing",
     },
     {
       title: `BEDA BARG FILCHASI (PHYTONOMUS VARIABILIS HBST)
@@ -81,23 +82,22 @@ export default function Articles() {
         "Xolmirzayev Azizbek Akmaljon o‘g‘li",
         "Abdullayev Azizbek Norbek o‘g‘li",
       ],
-      href: "https://drive.google.com/file/d/17tXE5H28dN00ShFQ6VjrtBfomdYihD4W/view?usp=drive_link",
+      href: "https://drive.google.com/file/d/17tXE5H28dN00ShFQ6VjrtBfomdYihD4W/view?usp=sharing",
     },
     {
-      title: `BEDA BARG FILCHASI (PHYTONOMUS VARIABILIS HBST)
-      ENTOMOFAGLARI TUR-TARKIBI`,
+      title: `Диффуз астроцитомалардаги патоморфологик хусусиятларининг таҳлили`,
       pages: "34-41",
       authors: ["Ҳ.А.Расулов", "Х.Ж. Бекназаров"],
-      href: "https://drive.google.com/file/d/17tXE5H28dN00ShFQ6VjrtBfomdYihD4W/view?usp=drive_link",
+      href: "https://drive.google.com/file/d/1db02KrXv8mykLeKh3teGX7sFjAi_-XQl/view?usp=sharing",
     },
   ];
   return (
     <div className={styles.wrapper}>
       <div className={styles.wrapper}>
-        <h1>{t("linkPosts")}</h1>
+        <h1>{t("articles")}</h1>
         <a
           target="_blank"
-          href="https://drive.google.com/file/d/1G5v0-LFO8BGa13lDsUb9yW0Lf7vofFQn/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1G5v0-LFO8BGa13lDsUb9yW0Lf7vofFQn/view?usp=sharing"
           className={styles.allArticles}
         >
           <img src={image} alt="" />
@@ -105,7 +105,7 @@ export default function Articles() {
         <div>2024 December Volume 1, Issue 1</div>
         <a
           target="_blank"
-          href="https://drive.google.com/file/d/1G5v0-LFO8BGa13lDsUb9yW0Lf7vofFQn/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1G5v0-LFO8BGa13lDsUb9yW0Lf7vofFQn/view?usp=sharing"
         >
           {t("openPdf")}
         </a>
