@@ -1,16 +1,29 @@
 import React from "react";
-import Post from "../../components/post/Post";
+import Post from "../../components/PostComponent/PostComponent.js";
 import styles from "./Posts.module.css";
-import { useSelector } from "react-redux";
+import { useGetAllIssuesQuery } from "../../store/RTK/postsApi.js";
+import Preloader from "../../components/PreLoader/Preloader.js";
+import IssueCard from '../volume/issueCard/IssueCard.js'
 export default function Posts() {
-  const arr = [1, 2, 3, 4, 5, 6, 7, 8];
-  const allPosts = useSelector((state) => state.post.allPosts);
+  const {data,isLoading ,isError} = useGetAllIssuesQuery()
   return (
     <div className={styles.wrapper}>
-      {allPosts &&
-        allPosts.map((post, index) => {
-          return <Post index={index} post={post} />;
-        })}
+      {
+        isLoading ? <Preloader/> :<>
+        {
+          isError ? <h1>Что-то пошло не так</h1> : <>
+          {
+            data.map(issue => {
+              return (
+                <IssueCard data={issue} key={issue.identifier}/>
+              )
+            })
+          }
+          </>
+        }
+        </>
+      }
     </div>
   );
 }
+

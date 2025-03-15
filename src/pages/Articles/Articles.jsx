@@ -11,8 +11,8 @@ export default function Articles() {
             VARIETIES OF FRUIT`,
       pages: "5-9",
       authors: [
-        "N.A. Nematov, PhD , associate professor",
-        "Abdullaev F.T., PhD, professor",
+        "N.A. Nematov PhD  associate professor",
+        "Abdullaev F.T. PhD, professor",
         "Dubovik T.V., senior teacher",
       ],
       href: "https://drive.google.com/file/d/1NkR1xoipcZATb97DexfGbDP9F4iV4FBW/view?usp=sharing",

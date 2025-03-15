@@ -2,7 +2,9 @@
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
     row-gap: 8px;
 }
 

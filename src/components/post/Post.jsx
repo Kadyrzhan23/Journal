@@ -3,7 +3,7 @@ import styles from "./Post.module.css";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import userIMG from '../../../public/user.png'
-export default function Post({ post, index }) {
+export default function Post({ data, index }) {
   const { t } = useTranslation();
   const navigate = useNavigate();
   // console.log(t("postAvtor"));
@@ -27,11 +27,11 @@ export default function Post({ post, index }) {
             </div>
           </div>
           <div className={styles.postInfo_col}>
-            {post.author.map((person, index) => {
+            {data.authors.map((person, index) => {
               return (
                 <div className={styles.postInfo_font}>
                   {person}
-                  {index + 1 !== post.author.length && ","}
+                  {index + 1 !== data.authors.length && ","}
                 </div>
               );
             })}
@@ -39,10 +39,11 @@ export default function Post({ post, index }) {
         </div>
       </div>
       <div className={styles.main}>
-        <img style={{ marginTop: 5 }} src={post.image} alt="" />
+        
+        
         {/* <div className={styles.postText}>
           <b className={styles.postTitle}>{post.title}</b> */}
-          <p>{post.description}</p>
+          <p>{data.text}</p>
         {/* </div> */}
       </div>
     </div>
