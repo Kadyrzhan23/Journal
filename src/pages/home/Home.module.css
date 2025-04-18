@@ -100,7 +100,14 @@ padding: 20px 0;
 }
 
 /* @media (max-width: 525px) {
+
     .section_02{
         height: 840px;
     }
 } */
+
+a{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

@@ -16,6 +16,10 @@
     "authors":"Authors",
     "openPdf":"Open PDF",
     "articles":"Articles",
-    "page":"Pages"
+    "page":"Pages",
+    "volume":"Volume",
+    "back":"",
+    "issueDefaults":"Posts have not been uploaded yet, you can go back and download the full version of the release"
+
 
 }

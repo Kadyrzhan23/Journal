@@ -26,3 +26,17 @@
     flex-direction: column;
     column-gap: 10px;
 }
+
+.text{
+    text-align: center;
+}
+
+.btn{
+    font-size: 18px;
+    text-decoration: underline;
+    color: #551A8B;
+}
+
+.btn:hover{
+    cursor: pointer;
+}

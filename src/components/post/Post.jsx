@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import userIMG from '../../../public/user.png'
 export default function Post({ data, index }) {
+  console.log(data)
   const { t } = useTranslation();
   const navigate = useNavigate();
   // console.log(t("postAvtor"));

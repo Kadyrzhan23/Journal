@@ -8,6 +8,7 @@ import LastPosts from "./last-posts/LastPosts";
 import { motion } from "framer-motion";
 import AnimateBar from "./animateBar/AnimateBar";
 import lastImage from "../../../public/decemberArticles.jpg";
+import PostsPeriodOfTime from './postsPeriodOfTime/Posts.js'
 export default function Home() {
   const textAnimation = {
     hidden: {
@@ -63,7 +64,8 @@ export default function Home() {
         </Container>
       </div>
       <div className={styles.section_03}>
-        <LastPosts />
+        {/* <LastPosts /> */}
+        <PostsPeriodOfTime/>
       </div>
     </div>
   );

@@ -56,10 +56,10 @@ const UZ = (
         <span>14.00.00</span>
         <span>Meditsina sohasi yo‘nalishlari.</span>
       </div>
-      <div className={styles.line}>
+      {/* <div className={styles.line}>
         <span>16.00.00</span>
         <span>Veterinariya sohasi yo‘nalishlari.</span>
-      </div>
+      </div> */}
     </div>
     <br />
     <br />
@@ -71,7 +71,7 @@ const UZ = (
         OAV tili - O‘zbek, rus, ingiliz, qoraqalpoq va qozoq tillarida
       </div>
       <div className={styles.line2}>
-        Jurnal rahbari: Turg‘unov Azizbek Normat o‘g‘li
+      Ijrochi direktor: Turg‘unov Azizbek Normat o‘g‘li
       </div>
     </div>
     <div className={styles.footer}>
@@ -116,10 +116,10 @@ const EN = (
         <span>14.00.00</span>
         <span>Directions in the field of medicine.</span>
       </div>
-      <div className={styles.line}>
+      {/* <div className={styles.line}>
         <span>16.00.00</span>
         <span>Directions of the veterinary field.</span>
-      </div>
+      </div> */}
     </div>
     <br />
     <br />
@@ -130,7 +130,7 @@ const EN = (
       <div className={styles.line2}>
         Media language - Uzbek, Russian, English, Karakalpak and Kazakh
       </div>
-      <div className={styles.line2}>Head of the journal: Turgunov Azizbek</div>
+      <div className={styles.line2}>Executive Director: Turgunov Azizbek</div>
     </div>
     <div className={styles.footer}>
       Address: University Street 2, Kibrai District, Tashkent Region
@@ -177,10 +177,10 @@ const RU = (
         <span>14.00.00</span>
         <span>Направления в области медицины.</span>
       </div>
-      <div className={styles.line}>
+      {/* <div className={styles.line}>
         <span>16.00.00</span>
         <span>Направления ветеринарной сферы.</span>
-      </div>
+      </div> */}
     </div>
     <br />
     <br />
@@ -191,7 +191,7 @@ const RU = (
       <div className={styles.line2}>
         Язык журнал– узбекский, русский, английский, каракалпакский и казахский.
       </div>
-      <div className={styles.line2}>Руководитель журнала: Тургунов Азизбек</div>
+      <div className={styles.line2}>Исполнительный директор: Тургунов Азизбек</div>
     </div>
     <div className={styles.footer}>
       Адрес: Ташкентская область, Кибрайский район, улица Университетская, 2.
@@ -238,10 +238,10 @@ const KZ = (
         <span>14.00.00</span>
         <span>Медицина саласындағы бағыттар.</span>
       </div>
-      <div className={styles.line}>
+      {/* <div className={styles.line}>
         <span>16.00.00</span>
         <span>Ветеринария саласындағы бағыттар.</span>
-      </div>
+      </div> */}
     </div>
     <br />
     <br />
@@ -252,7 +252,7 @@ const KZ = (
       <div className={styles.line2}>
         Журналдың тілі – өзбек, орыс, ағылшын, қарақалпақ, қазақ тілдерінде.
       </div>
-      <div className={styles.line2}>Журнал меңгерушісі: Тұрғунов Азизбек</div>
+      <div className={styles.line2}>Атқарушы директор: Тұрғунов Азизбек</div>
     </div>
     <div className={styles.footer}>
       Мекен-жайы: Ташкент облысы, Қибрай ауданы, Университет көшесі, 2. Ташкент

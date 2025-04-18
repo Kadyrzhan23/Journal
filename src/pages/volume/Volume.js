@@ -17,6 +17,9 @@ export default function Volume() {
     
     return (
         <div className={styles.wrapper}>
+            <div className={styles.btn}
+                onClick={() => navigate(-1)}
+            >Назад</div>
             <div className={styles.issuesWrapper}>
                 {
                     isLoading ? <h1>Загрузка...</h1> : <>

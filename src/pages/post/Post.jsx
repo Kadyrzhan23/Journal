@@ -9,7 +9,7 @@ import axios from "../../store/axios.js";
 import { errorMessage } from "../../service/Alerts";
 export default function Post() {
   const { id } = useParams();
-  const { data, isLoading } = useGetOnePostQuery(id);
+  const { data, isLoading ,isError} = useGetOnePostQuery(id);
 
   useEffect(()=>{
     window.scrollTo(0,0)
@@ -19,13 +19,15 @@ export default function Post() {
       {isLoading ? (
         <Preloader />
       ) : (
-        <div
+        <>
+        {
+          isError ? <h1 >Пост неактивен, пользователи не видять этот пост!!!</h1> : <div
           className={`${styles.wrapper} ${
-            !data.isVisible && styles.backgroundRed
+            !data?.isVisible && styles.backgroundRed
           }`}
         >
           <>
-            {!data.isVisible && (
+            {!data?.isVisible && (
               <h3 className={styles.redText}>
                 Пост неактивен, пользователи не видять этот пост!!!
               </h3>
@@ -38,6 +40,8 @@ export default function Post() {
               Открыть PDF
             </a>
         </div>
+        }
+        </>
       )}
     </>
   );
